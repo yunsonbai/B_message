@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>nihao</title>
+</head>
+<body>
+	<!--基本结构
+	<input type="类型" name="名字">
+	元素
+	输入框，单选框，复选框，文本，密码，上传文件
+	表单元素被<form>包含来传输-->
+	<!--action的值提交给那个界面（URL）
+	method:
+	get :服务器快速响应，可收藏，不能提交的太大
+	post(较安全)不可收藏，不立即响应，没有大小限制-->
+	<form action="houtai.html" method="post">
+		name:<input type="text" name="username"><br/>
+		pawd:<input type="password" name="pwd"><br/>
+		
+		<br/><br/><br/><br/>
+		请选择:
+		<input type="checkbox" name="city" value="beijing">北京
+		<input type="checkbox" name="city" value="shanghai">上海
+		<br/><br/><br/><br/>
+		性别：
+		<input type="radio" name="sex" value="nanren">男人
+		<input type="radio" name="sex" value="nvren">女人
+		<br/>
+		出生地
+		<!--下拉菜单-->
+		<select name="addr" size="1" ><!--multiple允许多选-->
+			<option value="hebei">河北</option>
+			<option value="beijing">北京</option>
+			<option value="shanghai">上海</option>	
+		</select>
+		<!--***********************-->
+		<!--文本域-->
+		<textarea name="mytext" cols="40" rows="10">
+
+			
+		</textarea>
+		<!--**********************-->
+		<!--上传文件-->
+			<input type="file" name="myfile">上传文件<br/>
+
+		<!--*********************-->
+
+
+
+		<br/>
+		<input type="hidden" name="data" value="ok">
+		<br/>
+		<input type="submit" value="提交"/>
+		<input type="reset" value="重新填写"/>
+	</form>
+</body>
+</html>
